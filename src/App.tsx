@@ -24,9 +24,7 @@ class App extends React.Component<AppProps, AppState>{
   };
 
   handleDestroy = (id) => {
-    console.log(this.state.list)
     let t = this.state.list.filter(p => p.id !== id)
-    console.log(t)
     this.setState({ list: t })
   }
   addChild = (dura) => {
